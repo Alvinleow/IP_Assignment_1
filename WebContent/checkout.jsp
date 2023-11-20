@@ -25,7 +25,6 @@
     
 </head>
 <body bgcolor="#33CCFF">
-<!--     <center> -->
 		
 		<script>
 			function checkout() {
@@ -46,7 +45,6 @@
 		</script>
 		
 		<%!
-        // Helper method placed within a declaration block
         @SuppressWarnings("unchecked")
         private Vector<VCDBean> safeCastToVectorOfVCDBean(Object obj) {
             if (obj instanceof Vector<?>) {
@@ -63,7 +61,6 @@
         	Vector<VCDBean> buylist = safeCastToVectorOfVCDBean(session.getAttribute("cart"));
             if (buylist != null && !buylist.isEmpty()) {
                 float total = 0;
-                // Display the checkout items
         %>
         		<div class="center">
 			        <h1>VCD Shopping Checkout</h1>
@@ -114,6 +111,5 @@
         <%
             }
         %>
-<!--     </center> -->
 </body>
 </html>
